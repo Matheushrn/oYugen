@@ -1,0 +1,189 @@
+@charset "UTF-8";
+
+body{
+    font-family: eras ITC, Verdana, Geneva, Tahoma, sans-serif;
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    margin: auto;
+}
+
+/* css do nav */
+.box_Logo{
+    width:20%;
+    height:60px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.tamanho_Logo{
+    height:60px;
+    margin-left:20px;
+}
+
+.box_Menu{
+    width:80%;
+    height:60px;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+nav ul{
+    list-style:none;
+    margin:0px;
+    padding:0px;
+    text-align: center;
+    font-size:1em;
+}
+
+
+nav ul li{
+    display: inline-block;/* blocos na mesma linha*/
+    margin-right: 10px;/* distancia entre botões*/
+}
+
+nav ul li a{
+    padding:10px;
+    margin-top:10px;
+    text-decoration: none;
+    color:whitesmoke;
+    display: block;
+    text-align: center;
+}
+
+nav ul li a:hover{
+    background-color:rgb(134, 164, 14);
+    transition: all .5s;
+    border-radius:20px 0px 20px 0px;
+}
+
+.menu_fixo{
+        /* propriedade que congela o menu */
+        position: sticky;
+        /* fixa o menu na parte de cima  */
+        top:0px;
+        /* ordem de aparição , está 1000 para realmente tudo ficar atrás do menu*/
+        z-index:1000;
+        text-align: center;
+        padding:0px;
+}
+
+    .menu_fixo nav a{
+        margin:1;
+        text-decoration: none;
+        color: white
+}
+
+/* css Banner */
+.box_Banner{
+    width:100%;
+    height:400px;
+    background-image: url(../imagens/Banner5.png);
+    background-size: cover;
+    background-position: center;
+    transition:background-image 1.5s ease-in-out;
+
+    /* Formatação texto */
+
+    font-size: 2.3em;
+    letter-spacing:2%;
+    color:white;
+    padding-top:250px;
+    padding-right:100px;
+    text-align: right;
+}
+
+.box_Banner:hover{
+    background-image: url(../imagens/banner2.png);
+}
+
+
+/* Css box pratos */
+
+.box_Pratos{
+    width:25%;
+    height:auto;
+    background-color:rgba(82, 80, 80, 0.452);
+    border:1px solid black;
+    border-radius:0px 50px 0px 50px;
+    padding:2%;
+    margin:2%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+h1{
+    letter-spacing:4px;
+}
+
+.pratos{
+    width:100%;
+    height:auto;
+    border-radius:100%;
+}
+
+/* css banner secundario */
+
+.box_BannerSecun{
+    width:100%;
+    height:400px;
+    margin-top:3%;
+}
+
+.banner_Estatico{
+    width:100%;
+    height:400px;
+
+}
+
+/* css redes */
+
+.box_Redes{
+    width:100%;
+    height:auto;
+    background-color: rgba(65, 65, 64, 0.692);
+    text-align: center;
+    margin-top:5%;
+}
+
+.redes{
+    height:40px;
+    padding:1%;
+    margin:1%;
+}
+
+a{
+    text-decoration:none;
+}
+
+/* css footer */
+
+.box_Footer{
+    width:100%;
+    height:40px;
+    color: white;
+    text-align: center;
+    letter-spacing:5%;
+}
+
+/* breaking points */
+
+@media screen and (min-width:480px) and (max-width: 760px){
+
+    .box_Menu{
+        font-size:2.5vw;
+    }
+
+     .box_Pratos{
+        width:50%;
+        height:auto;
+        margin:2%;
+        padding:50px;
+    }
+}
