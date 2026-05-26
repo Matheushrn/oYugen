@@ -1,0 +1,79 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* titulo acima dos pratos */
+.tipoprato{
+    width:50%;
+    text-align: center;
+    font-weight: bolder;
+    font-size:1.5em;
+    margin-top:50px;
+}
+
+/* caixa da foto dos pratos */
+.box_Pratos{
+    width:15%;
+    height:auto;
+    background-color:rgba(82, 80, 80, 0.452);
+    border:1px solid black;
+    border-radius:30px;
+    padding:3%;
+    margin:0.5%;
+    text-align: center;
+    font-size: 1vw;
+    transition: all 1s ease-in;
+}
+
+.box_Pratos h1{
+    letter-spacing:3px;
+}
+
+/* caixa falando sobre os pratos */
+.box_ComentPrato{
+    width:15%;
+    height:auto;
+    background-color:rgba(82, 80, 80, 0.452);
+    border:1px solid black;
+    border-radius:30px;
+    padding:1%;
+    margin:2%;
+    text-align: center;
+    font-size: 1vw;
+}
+
+.fazer_Pedido{
+    margin-top:10px;
+}
+
+.box_Pratos:hover{
+    transform: scale(1.0) translate(10px, -8px);
+    transition: all 1s ease-in;
+}
+
+
+/* Breakinpoints */
+@media screen and (min-width:480px) and (max-width: 760px){
+
+    .box_Menu{
+        font-size:2.5vw;
+    }
+
+    .tipoprato{
+        display: none;
+    }
+
+     .box_Pratos{
+        width:50%;
+        height:auto;
+        margin:2%;
+        padding:50px;
+        font-size:2.5vw;
+    }
+
+    .box_ComentPrato{
+        width:50%;
+        font-size:3vw;
+        height: auto;
+    }
+}

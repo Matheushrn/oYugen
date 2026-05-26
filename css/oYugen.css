@@ -1,0 +1,32 @@
+.box_Foto1{
+    width:50%;
+}
+
+.Foto_Restaurante{
+    width: 100%;
+    height: auto;
+    margin:2%;
+    padding:2%;
+}
+
+.box_Foto2{
+    width:50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+}
+
+.fotos{
+    width:20%;
+    padding:1%;
+    margin:2%;
+}
+
+.imagem{
+    width:100%;
+    height:auto;
+}
+
+
