@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    
+    <div class="container">
+
+        <!-- parte do logo -->
+        <!-- duas classes - box_logo e menu_fixo -->
+        <div class="box_Logo menu_fixo">
+            <img src="imagens/logo.png" alt="Logo do Restaurante" title="logo restaurante" class="tamanho_Logo">
+        </div>
+
+        <!-- barra de navegação -->
+        <!-- duas classes - box_Menu e menu_fixo -->
+        <div class="box_Menu  menu_fixo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="cardapio.html">Cardápio</a></li>
+                    <li><a href="yugen.html">O Yügen</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <h1>Faça sua reserva</h1>
+
+        <div class="reserva">
+            <img src="imagens/reserva.png" alt="foto da reserva" class="img_Reserva">
+        </div>
+
+        <div class="formulario">
+            <form method="POST" action="mailto:oYugen@gmail.com" id="contato">
+
+                <!-- Campo nome -->
+                <p>
+                    <label for="cNome">Nome:</label>
+                    <input type="text" name="tNome" id="cNome" class="form" size="40" maxlength="20" autofocus required >
+                </p>
+
+                <!-- Campo endereço -->
+                <p>
+                    <label for="cRua">Endereço: </label>
+                    <input type="text" name="tRua" id="cRua"
+                    class="form" size="40" placeholder="Rua,Avenida,Travessa" required>
+                </p>
+
+                <!-- Campo Telefone -->
+                <p>
+                    <label for="cTel">Telefone: </label>
+                    <input type="tel" name="tMail" id="cTel" 
+                    class="form" size="40" maxlength="11" placeholder="99 9999-9999" required>
+                </p>
+
+                <p>
+                    <label for="cDate">Data: </label>
+                    <input type="date" name="tDate" class="form" id="cDate">
+                </p>
+
+                <!-- botão reserva -->
+                <input type="submit" name="reservar" value="Reservar" class="button">
+            </form>
+
+            </form>
+        </div>
+ 
+        <!-- box redes sociais -->
+        <div class="box_Redes">
+            <a href="#" target="_blank">
+                <img src="imagens/Facebook.png" alt="facebook" class="redes">
+            </a>
+            <a href="#" target="_blank">
+                <img src="imagens/Instagram.png" alt="Instagram" class="redes">
+            </a>
+            <a href="#" target="_blank">
+                <img src="imagens/WhatsApp.png" alt="WhatsApp" class="redes">
+            </a>
+        </div>
+
+        <!-- box footer -->
+        <footer class="box_Footer">
+            <p>Todos os direitos reservados - 2026</p>
+        </footer>
+    </div>
+
+</body>
+</html>

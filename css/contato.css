@@ -1,0 +1,78 @@
+h1{
+    width:100%;
+    text-align: center;
+}
+
+.reserva{
+    width:50%;
+}
+
+.img_Reserva{
+    width:90%;
+    height: auto;
+    margin-top:10%;
+    margin-left:5%;
+    border-radius:5px;
+}
+
+.formulario{
+    width:45%;
+    height: auto;
+    margin-left:5%;
+    text-align: center;
+}
+
+.form{
+    width:50%;
+}
+
+.button{
+    width:13%;
+    padding:0.8%;
+    margin:2.5%;
+    border-radius:5px;
+}
+
+.button:hover{
+    background-color: rgb(134, 164, 14);
+    color:white;
+    cursor: pointer;
+}
+
+/* Breaking points */
+
+@media screen and (min-width:480px) and (max-width: 760px){
+
+    .reserva{
+        display: none;
+    }
+
+    .form{
+    width:100%;
+    }
+
+    .button{
+        width:40%;
+        padding:2.5%;
+        margin:10%;
+        border-radius:5px;
+    }
+}
+
+@media screen and (min-width:760px) and (max-width: 1200px){
+
+    .reserva{
+        display: none;
+    }
+
+    .form{
+        width:100%;
+    }
+
+    .button{
+        width:25%;
+        padding:2.5%;
+        margin:10%;
+        border-radius:5px;
+    }
+}

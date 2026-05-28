@@ -29,4 +29,23 @@
     height:auto;
 }
 
+/* breaking points */
+@media screen and (min-width:480px) and (max-width: 760px){
+
+    .box_Foto1{
+        width:80%;
+    }
+
+     .box_Foto2{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .fotos{
+        width:100%;
+        height:auto;
+        padding:2%;
+        margin:2%;
+    }
+}
 
